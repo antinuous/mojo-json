@@ -34,7 +34,7 @@ scripts = ["json/cpu/simdjson_ffi/build.sh"]
 # version this code compiles against. That is what a run constraint is
 # for: it pins without pulling.
 [package.run-constraints]
-max-core = "==26.7"
+max-core = "==26.8.0.dev2026102505"
 
 # Declared so that `json = { git = "...", extras = ["gpu"] }` works the
 # day a released build backend reports extra groups. Pixi takes a source
@@ -42,7 +42,7 @@ max-core = "==26.7"
 # released backend fills that field yet, so this is inert today and the
 # README documents the explicit `max-core` line instead.
 [package.extra-dependencies.gpu]
-max-core = "==26.7"
+max-core = "==26.8.0.dev2026102505"
 
 [dependencies]
 # Runtime + build-essential for anyone working with this repo (running tests,
@@ -93,7 +93,7 @@ gdown = ">=5.0"           # Google Drive CLI for downloading benchmark datasets
 # a consumer of the published package gets.
 # ------------------------------------------------------------------
 [feature.gpu.dependencies]
-max-core = "==26.7"
+max-core = "==26.8.0.dev2026102505"
 
 [feature.fuzz.dependencies]
 mozz = { git = "https://github.com/ehsanmok/mozz.git", tag = "v0.2.2" }
