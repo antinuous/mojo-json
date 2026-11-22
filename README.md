@@ -7,6 +7,8 @@
 
 **High-performance JSON for Mojo** 🔥 Pure-Mojo two-pass CPU parser, GPU-accelerated parsing on NVIDIA, AMD, and Apple Metal, tape-backed `Document` shared by every backend, reflection serde with zero boilerplate, and JSONPath, JSON Pointer, JSON Patch and JSON Schema implemented against their specifications rather than approximated. The simdjson FFI shim is opt-in for the cases where you need it.
 
+This mirror locks the Mojo build that antinuous/research pins, and a research toolchain bump moves this lock in the same batch.
+
 ```mojo
 from json import loads, dumps
 
